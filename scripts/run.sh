@@ -1,10 +1,5 @@
 #!/bin/bash
 
-WORK_DIR=$(mktemp -d -t wsa-build-XXXXXXXXXX_)
-DOWNLOAD_DIR=../download
-OUTPUT_DIR=../output
-MOUNT_DIR="$WORK_DIR"/system
-cd "$(dirname "$0")" || exit 1
 
 abort() {
     echo "An error occurs, exit"
